@@ -24,4 +24,5 @@ class PositionalEncoder(nn.Module):
 
 pe=PositionalEncoder(dim_out=64)
 encoding=pe(seq_len=100)
-print(encoding.shape)
+print(f'encoding shape: {encoding.shape}')
+print(f'encoding: {encoding}')
